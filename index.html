@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Bootstrap Demo</title>
+    <title>Bootstrap Portfolio Index</title>
 
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -15,7 +15,9 @@
 <body>
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a id="navhead" class="navbar-brand" href="#">Amir Jafari</a>
+        <a id="navhead" class="navbar-brand" href="#">
+            <strong>Amir Jafari</strong>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,15 +25,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About
+                    <a class="nav-link" href="index.html">About
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
 
             </ul>
@@ -47,30 +49,36 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <img id="my-pic" src="PP2.jpg" alt="Amir Jafari">
             </div>
-            <div class="col-md-9">
-                Hi! My name is Amirhasan, but to make things easier for others, I go by Amir. I have masters degree in Mechanical Enginnering
-                and have been working as a Manufactruing Engineer for the last 5 years. In my mind, however, I would like
-                to think about myself as an Engineer. To me, Engineers are individuals who solve problems as tehy are presented
-                to them. Regardless of the complexity or subject, an Engineer always welcome challenges and tries to explore
-                options to solve them. When facing a challenge, an Engineer would ask: "how can I solve this?" in lieu of
-                looking for reasons why it can't be done.
+            <div class="col-md-7">
+                <p>Hi! My name is Amirhasan, but to make things easier for others, I go by Amir. I have masters degree in Mechanical
+                    Enginnering and have been working as a Manufactruing Engineer for the last 5 years. In my mind, however,
+                    I would like to think about myself as an Engineer. To me, Engineers are individuals who solve problems
+                    as tehy are presented to them. Regardless of the complexity or subject, an Engineer always welcome challenges
+                    and tries to explore options to solve them. When facing a challenge, an Engineer would ask: "how can
+                    I solve this?" in lieu of looking for reasons why it can't be done.</p>
             </div>
         </div>
         <br>
         <div class="row">
 
-            <div class="col-md-12">
-                Hi! My name is Amirhasan, but to make things easier for others, I go by Amir. I have masters degree in Mechanical Enginnering
-                and have been working as a Manufactruing Engineer for the last 5 years. In my mind, however, I would like
-                to think about myself as an Engineer. To me, Engineers are individuals who solve problems as tehy are presented
-                to them. Regardless of the complexity or subject, an Engineer always welcome challenges and tries to explore
-                options to solve them. When facing a challenge, an Engineer would ask: "how can I solve this?" in lieu of
-                looking for reasons why it can't be done.
+            <div class="col-md-10">
+                <p>I have been married for 5 years and just turned 30 last March! Personally, I enjoy being challenged and gain
+                    satisfaction in overcoming obstacles in life. 7 years ago, I decided to move to the US to pursue my academic
+                    and personal amibition. Since then, I have met new people, experienced new cultures and matured as a
+                    human being. For this, I'm always grateful for the decision I made.</p>
+            </div>
+            <div class="col-md-10">
+                <p>to learning more from Doug, Steve, and Sam, as well as all my cohort-mates. I do not expect the next 6 months
+                    to be easy, but I look at it as a foundation for a giant structure. If I can successfully build strong
+                    foundation, I could then use it to grow it to something amazing in my life. Because of this, I am rady
+                    to dedicate my time and energy to this cause for the next 6 months.</p>
             </div>
         </div>
+        <br>
+        <br>
         <br>
         <div id="footer" class="row">
             <div class="col-md-10">
@@ -85,7 +93,7 @@
         }
 
         body {
-            display: table-cell;
+
             vertical-align: middle;
             background-image: url("dust_scratches.png");
             font-family: 'Georgia', Times, Times New Roman, serif;
@@ -96,14 +104,14 @@
             font-family: 'Georgia', Times, Times New Roman, serif;
             background-color: #4aaaa5;
             color: #ffffff;
-            padding: 27px;
+            padding: 15px;
             margin: 0;
             font-size: 32px;
         }
 
         .container {
             background-color: #ffffff;
-
+            margin-right: 35%;
         }
 
         h1 {
@@ -117,8 +125,9 @@
         }
 
         #footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
+            left: 0;
             background-color: #777777;
             border-top: 2px solid #4aaaa5;
             color: #ffffff;
@@ -129,8 +138,15 @@
 
         #navhead {
             color: #ffffff;
+
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
 
 </body>
